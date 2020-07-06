@@ -428,9 +428,9 @@
 					<configuration>
 						<changeLogFile>src\main\resources\db\changes\changelog.xml</changeLogFile>
 						<driver>com.mysql.jdbc.Driver</driver>
-						<url>${abc}</url>
-						<username>${xyz}</username>
-						<password>${jdbc_password}</password>
+						<url>${mysql_url}</url>
+						<username>${mysql_user}</username>
+						<password>${mysql_pass}</password>
 						<promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
 					</configuration>
 					<executions>
@@ -507,9 +507,9 @@
 				<db.script>mysql</db.script>
 				<jpa.database>MYSQL</jpa.database>
 				<jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
-				<jdbc.url>${abc}</jdbc.url>
-				<jdbc.username>${xyz}</jdbc.username>
-				<jdbc.password>${jdbc_password}</jdbc.password>
+				<jdbc.url>${mysql_url}</jdbc.url>
+				<jdbc.username>${mysql_user}</jdbc.username>
+				<jdbc.password>${mysql_pass}</jdbc.password>
 			</properties>
 			<dependencies>
 				<dependency>
