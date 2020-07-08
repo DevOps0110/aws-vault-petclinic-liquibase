@@ -41,4 +41,17 @@
 		</insert>
 		<rollback>delete from owners where id=24</rollback>
 	</changeSet>
+    <changeSet author="AshwaniPandey" id="addShruti">
+		<insert tableName="owners">
+			<column name="id" type="INT" value="25">
+				<constraints nullable="false" />
+			</column>
+			<column name="first_name" type="VARCHAR(50)" value="Shruti" />
+			<column name="last_name" type="VARCHAR(50)" value="Jamgade" />
+			<column name="address" type="VARCHAR(50)" value="41 Brabourne St." />
+			<column name="city" type="VARCHAR(50)" value="Mumbai" />
+			<column name="telephone" type="VARCHAR(50)" value="9123456478" />
+		</insert>
+		<rollback>delete from owners where id=25</rollback>
+	</changeSet>
 </databaseChangeLog>
